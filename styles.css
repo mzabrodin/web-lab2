@@ -28,8 +28,66 @@ body{
 
 .item-list-section .item-section {
     padding: 10px;
-    border-top: gray 1px solid;
+    border-top: lightgray 1px solid;
 }
+
+.stat-section .remaining-text {
+    padding: 15px 10px;
+    font-weight: bold;
+    font-family:  "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    border-bottom: lightgray 1px solid;
+}
+
+.stat-section .bought {
+    margin: 0px;
+    padding: 15px 10px;
+    font-weight: bold;
+    font-family:  "Roboto", sans-serif;
+    font-size: 18px;
+    border-bottom: lightgray 1px solid;
+    border-top: lightgray 1px solid;
+}
+
+.remaining-items-section .items-list-text{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+}
+
+.bought-items-section .items-list-text{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+.stat-section .item{
+    display: inline-block;
+    padding: 8px 5px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+}
+
+.stat-section .item .item-quantity{
+    border-radius: 50%;
+    background-color: #e4ae1a;
+    color: white;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+.bought-items-section span{
+    text-decoration: line-through;
+    color: gray;
+}
+
 
 @media screen and (min-width: 500px) {
     .main-section{
