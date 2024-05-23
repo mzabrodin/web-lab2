@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="main-section">
+    <section class="search-section">
+        <form>
+            <label>
+                <input class="add-input-area" type="text" name="item" placeholder="Назва товару">
+            </label>
+            <button class="add-button" type="submit">Додати</button>
+        </form>
+    </section>
+    <section class="item-list-section">
+        <article class="item-section">
+            <span class="item-name bought">Помідори</span>
+            <span class="item-quantity">2</span>
+            <button class="status not-bought">Не куплено</button>
+        </article>
+        <article class="item-section">
+            <span class="item-name">Печиво</span>
+            <button class="remove-item">-</button>
+            <span class="item-quantity">2</span>
+            <button class="add-item">+</button>
+            <button class="status bought">Куплено</button>
+            <button class="remove-item">⨉</button>
+        </article>
+        <article class="item-section">
+            <span class="item-name" contenteditable="true">Сир</span>
+            <button class="remove-item">-</button>
+            <span class="item-quantity">1</span>
+            <button class="add-item">+</button>
+            <button class="status bought">Куплено</button>
+            <button class="remove-item">⨉</button>
+        </article>
+    </section>
+</div>
+
+<div class="stat-section">
+    <section class="remaining-items-section">
+        <p class="remaining-text">Залишилося</p>
+        <p class="items-list-text">
+            <span class="item">
+                <span class="item-name">Печиво</span>
+                <span class="item-quantity">2</span>
+            </span>
+            <span class="item">
+                <span class="item-name">Сир</span>
+                <span class="item-quantity">1</span>
+            </span>
+        </p>
+    </section>
+    <section class="bought-items-section">
+        <p class="bought">Куплено</p>
+        <p class="items-list">
+            <span class="item">
+                <span class="item-name">Помідори</span>
+                <span class="item-quantity">2</span>
+            </span>
+        </p>
+    </section>
+</div>
+
+</body>
+</html>
