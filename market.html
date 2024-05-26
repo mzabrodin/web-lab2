@@ -3,68 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Buy List</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<div class="main-section">
-    <section class="search-section">
-        <form>
-            <label>
-                <input class="add-input-area" type="text" name="item" placeholder="Назва товару">
-            </label>
-            <button class="add-button" type="submit">Додати</button>
+<main class="product-list">
+        <form class="add-form">
+                <input class="add-input-area" type="text" placeholder="Назва товару">
+                <button class="add-button" type="submit" data-tooltip="Додати товар">Додати</button>
         </form>
-    </section>
-    <section class="item-list-section">
-        <article class="item-section">
-            <span class="item-name bought">Помідори</span>
-            <span class="item-quantity">2</span>
-            <button class="status not-bought">Не куплено</button>
-        </article>
-        <article class="item-section">
-            <span class="item-name">Печиво</span>
-            <button class="remove-item">-</button>
-            <span class="item-quantity">2</span>
-            <button class="add-item">+</button>
-            <button class="status bought">Куплено</button>
-            <button class="remove-item">⨉</button>
-        </article>
-        <article class="item-section">
-            <span class="item-name" contenteditable="true">Сир</span>
-            <button class="remove-item">-</button>
-            <span class="item-quantity">1</span>
-            <button class="add-item">+</button>
-            <button class="status bought">Куплено</button>
-            <button class="remove-item">⨉</button>
-        </article>
-    </section>
-</div>
-
-<div class="stat-section">
-    <section class="remaining-items-section">
-        <p class="remaining-text">Залишилося</p>
-        <section class="items-list-text">
-            <span class="item">
-                <span class="item-name">Печиво</span>
-                <span class="item-quantity">2</span>
-            </span>
-            <span class="item">
-                <span class="item-name">Сир</span>
-                <span class="item-quantity">1</span>
-            </span>
+        <section class="item-section" id="tomatoes-section">
+            <span class="name" contenteditable="false">Помідори</span>
+            <section class="quantity-section">
+                <button class="remove" data-tooltip="Зменшити">-</button>
+                <button class="quantity" data-tooltip="К-сть товару">2</button>
+                <button class="add" data-tooltip="Збільшити">+</button>
+            </section>
+            <section class="status-section">
+                <button class="status" data-tooltip="Стан">Не куплено</button>
+                <button class="delete" data-tooltip="Видалити">x</button>
+            </section>
         </section>
-    </section>
-    <section class="bought-items-section">
-        <p class="bought">Куплено</p>
-        <section class="items-list-text">
-            <span class="item">
-                <span class="item-name">Помідори</span>
-                <span class="item-quantity">2</span>
-            </span>
+        <section class="item-section" id="cookies-section">
+            <span class="name" contenteditable="false">Печиво</span>
+            <section class="quantity-section">
+                <button class="remove" data-tooltip="Зменшити">-</button>
+                <button class="quantity" data-tooltip="К-сть тоовару ">2</button>
+                <button class="add" data-tooltip="Збільшити">+</button>
+            </section>
+            <section class="status-section">
+                <button class="status" data-tooltip="Стан">Куплено</button>
+                <button class="delete" data-tooltip="Видалити">x</button>
+            </section>
         </section>
-    </section>
-</div>
+        <section class="item-section" id="cheese-section">
+            <span class="name" contenteditable="true">Сир</span>
+            <section class="quantity-section">
+                <button class="remove" data-tooltip="Неможливо зменшити">-</button>
+                <button class="quantity" data-tooltip="К-сть товару">1</button>
+                <button class="add" data-tooltip="Збільшити">+</button>
+            </section>
+            <section class="status-section">
+                <button class="status" data-tooltip="Стан">Куплено</button>
+                <button class="delete" data-tooltip="Видалити">x</button>
+            </section>
+        </section>
+    </main>
 
+<aside class="statistic">
+    <p class="title">Залишилося</p>
+    <section class="remaining-section">
+            <span class="statistic-item">
+                Печиво
+                <span class="amount">2</span>
+            </span>
+            <span class="statistic-item">
+                Сир
+                <span class="amount">1</span>
+            </span>
+    </section>
+    <p class="title">Куплено</p>
+    <section class="bought-section">
+            <span class="statistic-item">
+                Помідори
+                <span class="amount">2</span>
+            </span>
+    </section>
+</aside>
+    <footer>
+        <button class="badge">
+            <p class="badge-text" id="buylist-text">Buy List</p>
+            <p class="badge-text" id="created-by">Created by:</p>
+            <p class="badge-text" id="surname-name">Zabrodin Maksym</p>
+        </button>
+    </footer>
 </body>
 </html>
