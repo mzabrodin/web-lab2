@@ -26,7 +26,7 @@ body{
 
 .add-form{
     display: flex;   
-    padding: 2vh 2vw;
+    padding: 2vh 10px;
     height: 30px;
     margin-bottom: 5px;
     align-items: center;
@@ -81,7 +81,7 @@ body{
  }
 
  .name{
-    margin-left: 1vw;
+    margin-left: 10px;
     justify-content: left;
  }
  .quantity-section{
@@ -90,7 +90,7 @@ body{
 
 .status-section{
     justify-content: right;
-    margin-right: 1vw;
+    margin-right: 5px;
 }
 
 .remove, .add{
@@ -229,7 +229,7 @@ body{
     display: flex;
     justify-content: flex-start;
     gap: 10px;
-    margin: 0px 15px;
+    margin: 0px 10px;
 
 }
 
@@ -275,8 +275,8 @@ body{
 } 
 
 .badge{
-    background-color: #4509D1;
-    border: 1px solid #4509D1;
+    background-color: #A020D2;
+    border: 1px solid #A020D2;
     color:white;
     margin-left: 5vw;
     width: 170px;
@@ -298,6 +298,7 @@ body{
 
 .badge:hover{
     height: 85px;
+    background-color: #328148;
 }
 
 
