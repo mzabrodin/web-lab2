@@ -24,26 +24,26 @@ body{
     flex:1.2;
 }
 
-.add-form{
-    display: flex;   
-    padding: 2vh 10px;
+.add-form {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 20px 10px;
     height: 30px;
     margin-bottom: 5px;
     align-items: center;
 }
 
-.add-button, .add-input-area{
+.add-button, .add-input-area {
     border: 1px solid lightgrey;
     height: 35px;
 }
 
-.add-input-area::placeholder{
+.add-input-area::placeholder {
     text-indent: 10px;
     font-size: 16px;
 }
 
-.add-button{
-    flex: 1;
+.add-button {
     background-color: #4283CA;
     color: white;
     font-weight: bolder;
@@ -53,19 +53,19 @@ body{
     box-shadow: 0 4px #2276B7;
     font-size: 16px;
     line-height: 20px;
-    cursor: pointer
+    cursor: pointer;
+    margin-top: -5px;
 }
 
-.add-button:hover{
+.add-button:hover {
     background-color: #2276B7;
 }
 
-.add-input-area{
-    flex: 5;
-    margin-top: 5px;
+.add-input-area {
     border-right: none;
     border-radius: 5px 0 0 5px;
 }
+
 
 .item-section{
     display: flex;
@@ -267,7 +267,7 @@ body{
     body{
         display: flex;
         flex-direction: column;
-        margin-right: 5vw;
+        margin-right: 20px;
     }
     .product-lsit, .statistic{
         width: 100%;
@@ -300,7 +300,6 @@ body{
     height: 85px;
     background-color: #328148;
 }
-
 
 #created-by{
     font-size: 12px;
