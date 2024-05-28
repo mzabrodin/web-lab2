@@ -190,7 +190,7 @@ body{
     text-decoration: line-through;
 }
 
-#cheese-section .remove{
+.remove[disabled = "true"]{
     background-color: #8e8888;
     border-bottom: 3px #8e8888 solid;
     cursor: not-allowed;
@@ -228,6 +228,7 @@ body{
 .remaining-section, .bought-section{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 0px 10px;
 
