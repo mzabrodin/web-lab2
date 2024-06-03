@@ -177,20 +177,20 @@ body{
     background-color: rgb(139, 34, 29);
 }
 
-#tomatoes-section .delete, #tomatoes-section .add, #tomatoes-section .remove{
+.item-section[status="bought"] .remove, .item-section[status="bought"] .add, .item-section[status="bought"] .status, .item-section[status="bought"] .delete{
     display: none;
     position: absolute;
 }
 
-#tomatoes-section .status{
-    margin-right: 5px;
-}
-
-#tomatoes-section .name{
+.item-section[status="bought"] .name{
     text-decoration: line-through;
 }
 
-.remove[disabled = "true"]{
+.item-section[status="bought"] .status{
+    margin: 5px;
+}
+
+.remove[disabled = "disabled"]{
     background-color: #8e8888;
     border-bottom: 3px #8e8888 solid;
     cursor: not-allowed;
