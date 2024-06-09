@@ -27,7 +27,7 @@ function renderStatistic() {
 form.addEventListener('submit', event => {
     event.preventDefault();
     let name = input.value.trim();
-    if (name && !isDuplicate(name)) {
+    if (!isDuplicate(name)) {
         createItemElement(name);
         renderStatistic();
         input.value = '';
@@ -38,10 +38,10 @@ form.addEventListener('submit', event => {
     }
 });
 
-function isDuplicate(name, excludeItem = null) {
+function isDuplicate(name) {
     let items = document.querySelectorAll('.item-section');
     for (let item of items) {
-        if (item !== excludeItem && item.dataset.item.toLowerCase() === name.toLowerCase()) {
+        if (item.dataset.item.toLowerCase() === name.toLowerCase()) {
             return true;
         }
     }
